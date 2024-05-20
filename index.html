@@ -1,623 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--========== BOX ICONS ==========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
-    <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title>Abel Antonio Cruz Suárez CV</title>
+    <title>CV - Abel Antonio Cruz Suárez</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            padding: 2rem;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        address {
+            font-style: normal;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+    </style>
 </head>
-
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#electives">Elective Courses</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!--========== HEADER ==========-->
-<header class=" l-header" id="header">
-    <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Abel Antonio Cruz Suárez</a>
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h1>Abel Antonio Cruz Suárez</h1>
+            <p>Software Developer</p>
+            <address>
+                <p><strong>Location:</strong> Havana, Cuba</p>
+                <p><strong>Email:</strong> <a href="mailto:abel@example.com">abel@example.com</a></p>
+                <p><strong>Phone:</strong> +53 123 456 789</p>
+            </address>
+        </section>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link">
-                        <i class='bx bx-home nav__icon'></i>Home
-                    </a>
-                </li>
+        <!-- Profile Section -->
+        <section id="profile" class="section">
+            <h2>Professional Profile</h2>
+            <p>Experienced software developer specializing in web and desktop applications. Proficient in a variety of programming languages and frameworks, with a keen interest in new technologies, data science, and artificial intelligence.</p>
+        </section>
 
-                <li class="nav__item">
-                    <a href="#profile" class="nav__link">
-                        <i class='bx bx-user nav__icon'></i>Profile
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#education" class="nav__link">
-                        <i class='bx bx-book nav__icon'></i>Education
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#skills" class="nav__link">
-                        <i class='bx bx-receipt nav__icon'></i>Skills
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#experience" class="nav__link">
-                        <i class='bx bx-briefcase-alt nav__icon'></i>Experience
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a href="#certificates" class="nav__link">
-                        <i class='bx bx-award nav__icon'></i>Certificates
-                    </a>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>University of Havana, Cuba</h3>
+                    <p>Bachelor's Degree in Computer Science</p>
+                    <p><time datetime="2018-09">September 2018</time> - <time datetime="2023-06">June 2023</time></p>
                 </li>
             </ul>
-        </div>
+        </section>
 
-        <div class="nav__toggle" id="nav-toggle">
-            <i class='bx bx-grid-alt'></i>
-        </div>
-    </nav>
-</header>
+        <!-- Languages Section -->
+        <section id="languages" class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>Spanish (Native)</li>
+                <li>English (Intermediate)</li>
+            </ul>
+        </section>
 
-<main class="l-main bd-container">
-    <!-- All elements within this div, is generated in PDF -->
-    <div class="resume" id="area-cv">
-        <div class="resume__left">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container section bd-grid">
-                    <div class="home__data bd-grid">
-                        <!-- <img src="assets/img/avatar.jpg" alt="" class="home__img"> -->
-                        <div style="margin-top: 30px;"></div>
-                        <h1 class="home__title">Abel Antonio Cruz Suárez</h1>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming Languages: C#, Python, JavaScript, Java</li>
+                <li>Frameworks and Libraries: .NET, Django, Flask, Angular, React</li>
+                <li>Principles: OOP, Design Patterns, RESTful API</li>
+                <li>Machine Learning: Scikit-learn, TensorFlow, Keras</li>
+                <li>Deep Learning: Convolutional Neural Networks, Recurrent Neural Networks</li>
+                <li>Operating Systems: Linux, Windows</li>
+            </ul>
+        </section>
 
-                        <h3 class="home__profession">Software Developer</h3>
-                        <!--<span id="resume-button" class="generate-pdf">Download</span>-->
-                    </div>
+        <!-- Interests Section -->
+        <section id="interests" class="section">
+            <h2>Interests</h2>
+            <p>Blockchain technology, Machine Learning, Deep Learning, Distributed Systems, Cybersecurity, Web Development.</p>
+        </section>
 
-                    <div class="home__address bd-grid">
-                            <span class="home__information">
-                                <i class='bx bx-map home__icon'></i> La Habana, Cuba
-                            </span>
+        <!-- Internship Section -->
+        <section id="internship" class="section">
+            <h2>Internship</h2>
+            <h3>Empresa de Telecomunicaciones (ETECSA)</h3>
+            <p><time datetime="2022-06">June 2022</time> - <time datetime="2022-08">August 2022</time></p>
+            <p>Responsibilities included developing internal tools for data analysis and contributing to the maintenance of existing software systems.</p>
+        </section>
 
-                        <span class="home__information">
-                                <i class='bx bx-envelope home__icon'></i> abelo08cruz@gmail.com
-                            </span>
-
-                        <span class="home__information">
-                                <i class='bx bx-phone home__icon'></i> (+53) 53050979
-                            </span>
-                    </div>
-
-                </div>
-
-                <!-- Theme change button -->
-                <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-            </section>
-
-
-            <!--========== PROFILE ==========-->
-            <section class="profile section" id="profile">
-                <h2 class="section-title">Profile</h2>
-
-                <p class="profile__description">
-                    Software developer with experience in web and desktop applications.
-                     Knowledge of several programming languages such as C, C#, python, R, prolog, haskell.
-                     I like to experiment with new technologies dedicated to web development; work applying
-                     the basic principles for deploying readable, sustainable and scalable software;
-                     the development of applications oriented to data science and artificial intelligence.
-                    
-                </p>
-            </section>
-
-            <!--========== EDUCATION ==========-->
-            <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
-
-                <div class="education__container bd-grid">
-                    <div class="education__content">
-                        <div class="education__time">
-                            <span class="education__rounder"></span>
-                            <span class="education__line"></span>
-                        </div>
-
-                        <div class="education__data bd-grid">
-                            <h3 class="education__title">Bachelor of Computer Science</h3>
-                            <span class="education__studies">University of Havana, Cuba</span>
-                            <span class="education__year">2022</span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--========== LANGUAGES ==========-->
-            <section class="languages section">
-                <h3 class="section-title">languages</h3>
-                <div class="languages__container">
-                    <ul class="languages__content bd-grid">
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> Spanish
-                        </li>
-                        <li class="languages__name">
-                            <span class="languages__circle"></span> English
-                        </li>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <ul>
+                <li>
+                    <h3>Backend Developer</h3>
+                    <p>Level 6 LLC</p>
+                    <p><time datetime="2023-01">January 2023</time> - Present</p>
+                    <ul>
+                        <li>Developing and maintaining backend services for web applications.</li>
+                        <li>Working with databases and RESTful APIs.</li>
+                        <li>Collaborating with front-end developers to integrate user-facing elements.</li>
                     </ul>
-                </div>
-            </section>
+                </li>
+                <li>
+                    <h3>Software Developer</h3>
+                    <p>Copextel S.A., Havana, Cuba</p>
+                    <p><time datetime="2023-01">January 2023</time> - Present</p>
+                    <ul>
+                        <li>Developed a web application for network monitoring using Django and React.</li>
+                        <li>Contributed to the design and implementation of a database for a large-scale inventory system.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Independent Projects</h3>
+                    <p>Freelance Developer</p>
+                    <ul>
+                        <li>Developed multiple web applications for local businesses using React and Django.</li>
+                        <li>Implemented machine learning models for data analysis projects.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
 
+        <!-- Courses Section -->
+        <section id="courses" class="section">
+            <h2>Courses and Certifications</h2>
+            <ul>
+                <li>Machine Learning Specialization - Coursera</li>
+                <li>Deep Learning Specialization - Coursera</li>
+                <li>Full-Stack Web Development with React - Coursera</li>
+            </ul>
+        </section>
 
-            <!--========== SKILLS  ==========-->
-            <section class="skills section hide" id="skills">
-                <h2 class="section-title">Skills</h2>
+        <!-- Elective Courses Section -->
+        <section id="electives" class="section">
+            <h2>Elective Courses</h2>
+            <ul>
+                <li>Advanced Differential Equations</li>
+                <li>Decentralized Applications Development</li>
+                <li>Introductory Deep Learning</li>
+            </ul>
+        </section>
+    </main>
 
-                <div class="skills__content bd-grid">
-                    <!-- <div class="skills__name">
-                        <span class="skills__circle"></span> Vue
+    <!-- Footer Section -->
+    <footer>
+        <button onclick="scrollToTop()">Scroll to Top</button>
+    </footer>
 
-                        <span class="skills__time">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                        </span>
-                    </div> -->
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> SOLID, DRY principles
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> C#
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Python
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> MySQL, SQL Server, SQLite
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> CosmosDb
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Asp Net Core, .Net
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> MVC, MVVM
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> WPF, Windows Forms
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Web Api
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Machine Learning
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Deep Learning
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Linux
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Windows
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Git
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Others: Prolog, Haskell, R, C, lenguaje ensamblador
-                    </div>
-                </div>
-                <!-- <a href="#" class="skills-button" id="skills-button">See More</a> -->
-                
-            </section>
-            
-        <!--========== INTERESES  ==========-->
-            <section class="skills section hide" id="skills">
-                <h2 class="section-title">Interests</h2>
-
-                <div class="skills__content bd-grid">
-                    <!-- <div class="skills__name">
-                        <span class="skills__circle"></span> Vue
-
-                        <span class="skills__time">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                        </span>
-                    </div> -->
-
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Blockchain Technologies.
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Machine Learning.
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Deep Learning.
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Distributed systems.
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> cybersecurity.
-                    </div>
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Web development.
-                    </div>
-                </div>
-                <!-- <a href="#" class="skills-button" id="skills-button">See More</a> -->
-            </section>
-            
-            
-            
-            
-        <!--========== Practicas  ==========-->
-            <section class="skills section hide" id="skills">
-                <h2 class="section-title">Internship</h2>
-
-                <div class="skills__content bd-grid">
-                    <!-- <div class="skills__name">
-                        <span class="skills__circle"></span> Vue
-
-                        <span class="skills__time">
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                            <i class="bx bxs-star"></i>
-                        </span>
-                    </div> -->
-
-                    <div class="skills__name">
-                        <span class="skills__circle"></span> Prácticas laborales en el departamento de tecnologías de la información
-                        de la Empresa de Telecomunicaciones (ETECSA).
-                    </div>
-                    
-                </div>
-                <!-- <a href="#" class="skills-button" id="skills-button">See More</a> -->
-            </section>
-            
-
-        </div>
-
-       <div class="resume__right">
-            <!--========== EXPERIENCE ==========-->
-            <section class="experience section" id="experience">
-                <h2 class="section-title">Experience</h2>
-
-                <div class="experience__container bd-grid">
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Backend software developer at Level 6 LLC Noviembre 2022 - Presente</h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                    Worked developing Team Captain microservice as C# backend developer, for Inscape platform.
-                                    This microservice is incharge of collecting data (message activity, channels, users, teams, etc) of Microsoft teams, from Graph Api, for different tenats. 
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">.Net 6</li>
-                                    <li class="experience__technologies-item">SQLServer</li>
-                                    <li class="experience__technologies-item">Entity Framework Core 7</li>
-                                    <li class="experience__technologies-item">Microsoft Graph SDK for C#</li>
-                                    <li class="experience__technologies-item">Azure Service Bus</li>
-                                </ul>
-                            </div>
-
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                    Working developing Microsoft 365 Reports microservice as C# backend developer, for Inscape platform.
-                                    This microservice allows companies using the azure cloud to monitored information about their tenants.
-                                    For example a tenant can subscribe to a report, such as Licenses, and know the licenses assigned to users and 
-                                    which is the amount of money they are spending. This way tenants can notice when licenses are being wasted
-                                    for lack of use or if any user is gone, but keeps having licenses and therefor losing money.
-                                    Other reports inform tenants about users interaction with OneDrive, OutLook, SharePoint, Teams, Visio and Project. 
-                                    A tenant can also know about users blocked in the company and get reports about the teams (private and public teams, 
-                                    number of guests and regular members, activity, etc.)
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">.Net 8</li>
-                                    <li class="experience__technologies-item">SQLServer</li>
-                                    <li class="experience__technologies-item">CosmosDb</li>
-                                    <li class="experience__technologies-item">Entity Framework Core 8</li>
-                                    <li class="experience__technologies-item">Microsoft Graph SDK for C#</li>
-                                    <li class="experience__technologies-item">Azure Service Bus</li>
-                                    <li class="experience__technologies-item">Azure Storage</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Retail Management Application (Independent Work) Julio 2022 - Noviembre 2022</h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                     This is a developing app
-                                     Responsible for managing the main tasks of a retail business.
-                                     I work as a full stack developer.
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">Asp.Net Core</li>
-                                    <li class="experience__technologies-item">SQLServer</li>
-                                    <li class="experience__technologies-item">Dapper</li>
-                                    <li class="experience__technologies-item">Web Api</li>
-                                    <li class="experience__technologies-item">MVVC</li>
-                                    <li class="experience__technologies-item">WPF</li>
-                                    <li class="experience__technologies-item">Caliburn.Micro</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Distributed Web Crawler (Distributed Systems Department) Enero 2021 - Junio 2021
-                            </h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                    This application was developed with the python programming language,
-                                     using the ZeroMQ framework for distributed communications between servers.
-                                     I worked on the creation of the infrastructure of a distributed network and
-                                     Also distributed database based on Chord algorithm for distributed hash tables.
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">Python</li>
-                                    <li class="experience__technologies-item">ZeroMQ</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Automatic Text Generation (Dept. Optimization Models) Enero 2021 - Mayo 2021
-                            </h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                    This is an application developed in the R programming language using Keras,
-                                     with the purpose of automating the generation of diaries of personal activities.
-                                     I worked developing an artificial intelligence model based on Long-Short-Term-Memory (LSTM) neural networks.
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">R</li>
-                                    <li class="experience__technologies-item">Keras</li>
-                                    <li class="experience__technologies-item">TensorFlow</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Application for Sales Administration (Independent Work)  Julio 2020 - Octubre 2020
-                            </h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                     Application responsible for the administrative and accounting work of a particular business
-                                     dedicated to the sale of food. I worked as a full stack developer.
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">Asp.Net Core 3.0</li>
-                                    <li class="experience__technologies-item">SQLServer</li>
-                                    <li class="experience__technologies-item">Entity Framework</li>
-                                    <li class="experience__technologies-item">MVC</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--Sube App-->
-                    <div class="experience__content">
-                        <div class="experience__time">
-                            <span class="experience__rounder"></span>
-                            <span class="experience__line"></span>
-                        </div>
-
-                        <div class="experience__data bd-grid">
-                            <h3 class="experience__title">Web application development for a virtual store (Independent Work)  Septiembre 2019 - Febrero 2020
-                            </h3>
-                            <li class="experience__description">
-                                <span class="experience__circle"></span>
-                                <div>
-                                     YouShop is an application
-                                     focused on the sale and auction of products by customers who register in the application.
-                                     I worked as a main Full Stack developer.
-                                </div>
-                            </li>
-                            <div class="experience__technologies">
-
-                                <ul class="experience__technologies-list">
-                                    <li class="experience__technologies-item">Asp.Net Core 3.0</li>
-                                    <li class="experience__technologies-item">MVC</li>
-                                    <li class="experience__technologies-item">SQLServer</li>
-                                    <li class="experience__technologies-item">Entity Framework</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!--ExtraCurricular Courses-->
-            <section class="experience section" id="courses">
-                <h2 class="section-title">Curses</h2>
-
-                <div class="experience__container bd-grid">
-                    <div class="skills__content bd-grid">
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Data structures and algorithms I y II
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Software Engineering
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Computer Networks
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Compilation
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Discrete Mathematics I y II. Graphs and Number Theory.
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Algebra I y II
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Design and Analysis of Algorithms
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Database Systems I y II
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Distributed systems
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Mathematical analysis I y II
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Matemática Numérica I y II
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Ordinary differential equations
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Machine Programming I y II (using assembly language and C)
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Programming
-                        </div>
-
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Programming languages
-                        </div>
-                        
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Artificial intelligence
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Information Retrieval Systems
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Probabilities and Statistics
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Simulation
-                        </div>
-                    </div>
-                </div>
-
-
-            </section>
-                    
-              <section class="experience section" id="courses">
-                <h2 class="section-title">Elective Courses</h2>
-
-
-                <div class="experience__container bd-grid">
-                    <div class="skills__content bd-grid">
-  
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Advanced Differential Equations.
-                        </div>
-                        
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Hyperledger Fabric oriented to the development of decentralized applications.
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Probabilistic Graphical Models
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Curse MIT 6.S191 Introduction To Deep Learning
-                        </div>
-                        <div class="skills__name">
-                            <span class="skills__circle"></span> Data Structures and Advanced Algorithms
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-</main>
-<!--========== SCROLL TOP ==========-->
-<a href="#" class="scrolltop" id="scroll-top">
-    <i class='bx bx-up-arrow-alt scrollttop__icon'></i>
-</a>
-
-<!--========== HTML2PDF ==========-->
-<!-- <script src="assets/js/html2pdf.bundle.min.js"></script> -->
-
-<!--========== MAIN JS ==========-->
-<script src="assets/js/main.js"></script>
+    <!-- JavaScript -->
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 </body>
-
 </html>
